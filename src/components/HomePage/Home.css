@@ -1,0 +1,118 @@
+.body{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    min-width: 1440px;
+    background-image: url(./../../Frame.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: #F8F6ED;
+}
+
+.carousel{
+    background: #FFFCF8;
+    float: left;
+    width: 100%;
+    min-width: 1440px;
+    height: 225.42px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 12.79px 0 0;
+}
+.carousel > *{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    animation: 24s autoplay1 infinite ease-in-out;
+}
+@keyframes autoplay1 {
+    0% {bottom: 100%;}
+    4% {bottom: 0%}
+    25% {bottom: 0%}
+    29% {bottom: -100%}
+    50% {bottom: -100%}
+    54% {bottom: -200%}
+    100% {bottom: -200%}
+}
+.carousel >:nth-child(1) {animation-delay: 0s;}
+.carousel >:nth-child(2) {animation-delay: 6s;}
+.carousel >:nth-child(3) {animation-delay: 12s;}
+.carousel >:nth-child(4) {animation-delay: 18s;}
+
+.sale{
+    margin: 0 30px 0 40px;
+    width: 94%;
+    height: 225px;
+    border-radius: 6px;
+}
+
+.wardrobe-frame{
+    float: left;
+    height: 205px;
+    background: #FFFEFD;
+    mix-blend-mode: normal;
+    margin: 18px 30px 0 30px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+}
+/*_____________________________________________________________________________*/
+.Section2{
+    float: left;
+    width: 100%;
+    min-width: 1440px;
+    height: 261px;
+    display: flex;
+    margin: 18px 0 0 0;
+    justify-content: space-between;
+}
+.User{
+    float: left;
+    width: 294.77px;
+    height: 260.98px;
+    background: #FFFEFD;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    margin: 0 0 0 30px;
+}
+.User-heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.6528px;
+    line-height: 31px;
+    color: #000000;
+    margin: 12.2px 0 0 91.06px;
+}
+.User-content{
+    display: flex;
+    width: 118.28px;
+    height: 85.43px;
+    background: #F8DB54;
+    margin: 13.2px -14.9px -6.57px 23.35px;
+    text-decoration: none;
+}
+.User-content-text{
+    width: 100%;
+    height: 19.71px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.1427px;
+    line-height: 20px;
+    text-align: center;
+    color: #636363;
+    margin: 13.2px 0 0 0;
+}
+
+.AD{
+    width: 78.5%;
+    height: 261px;
+    margin: 0;
+}
+.AD1{
+    width: 95.9%;
+    min-width: 1440px;
+    height: 100%;
+    margin: 16px 0 0 30px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.15));
+    /*box-shadow: 0px 0.953483px 1.90697px rgba(71, 71, 71, 0.25);*/
+    border-radius: 4.76741px;
+}

@@ -1,0 +1,10 @@
+#After Updating Your Repo
+npm ci
+
+#Ensuring required formatters present in VSCode
+Ctrl + P
+ext install esbenp.prettier-vscode ---> {can also enable just for this workspace, upto the user}
+
+#Ensuring same formatting styles, Run before commit
+npm run format
+npm run check ---> {should print success message}

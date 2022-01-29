@@ -1,0 +1,93 @@
+.wardrobe{
+    display: flex;
+    justify-content: center;
+}
+.wardrobe-heading{
+    width: 88.45px;
+    height: 27.27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.1191px;
+    line-height: 26px;
+    align-items: center;
+    color: #784E08;
+    margin: 0;
+    padding: 8px 0 0 13.6px;
+    float: left;
+}
+.wardrobe-rope{
+    float: left;
+    width: 1335.42px;
+    height: 3px;
+    background-color: #FFC056;
+    margin: 20px 0 0 30px;
+}
+/*________________________________________________________________________________*/
+/*________________________________________________________________________________*/
+.trending-frame, .ethnic-frame, .party-frame, .puja-frame{
+    position: absolute;
+    top: 65.08px;
+}
+.trendingBG, .ethnicBG, .partyBG, .pujaBG{
+    position: absolute;
+    float: left;
+    width: 276px;
+    height: 108.9px;
+    border-radius: 4.02729px;
+    background: rgba(126, 113, 60, 0.65);
+    box-shadow: inset 0px 0px 19.714px 8.44886px rgba(0, 0, 0, 0.25);
+}
+.trending-img, .ethnic-img, .party-img, .puja-img{
+    position: absolute;
+    width: 77.92px;
+    height: 100.45px;
+    left: 13px;
+    top: -15px;
+    filter: drop-shadow(0px 1.87752px 3.75505px rgba(71, 71, 71, 0.25));
+    border-radius: 9.38762px;
+}
+.trending, .ethnic, .party, .puja{
+    position: absolute;
+    width: 125.79px;
+    height: 40.37px;
+    left: 124.86px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27.5503px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    mix-blend-mode: color-burn;
+}
+.trending-text, .ethnic-text, .party-text, .puja-text{
+    position: absolute;
+    width: 80.73px;
+    height: 16.9px;
+    left: 168.04px;
+    top: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.5101px;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFEFD;
+    mix-blend-mode: overlay;
+}
+/*________________________________________________________________________________*/
+/*________________________________________________________________________________*/
+
+.trending-frame{
+    left: 65px;
+}
+.ethnic-frame{
+    left: 410px;
+}
+.party-frame{
+    left: 760px;
+}
+.puja-frame{
+    left: 1105px;
+}

@@ -1,0 +1,46 @@
+.budget-store, .user{
+    float: left;
+    margin: 0 15% 0 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.budget-store-text, .user-text{
+    float: left;
+    width: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #494848;
+    text-align: right;
+    padding: 0;
+}
+.user-text{
+    width: 200px;
+}
+
+.downArrow{
+    float: left;
+    margin: 21px 0 0 2px;
+    position: absolute;
+}
+
+.budget-store-dropdown, .user-dropdown{
+    background: #F8F6ED;
+    width: 134px;
+    border-radius: 10px;
+    margin-left: 18px !important;
+}
+.user-dropdown{
+    margin-left: 70px !important;
+}
+.user-dropdown-content, .budget-store-dropdown-content{
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: #6C6C6C !important;
+}
