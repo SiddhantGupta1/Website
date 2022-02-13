@@ -38,7 +38,7 @@ const Address = () => {
         },
         {
             id: 2,
-            name: "Siddhant",
+            name: "Kartik",
             address: " 20/15 delhi street",
             area: "Rajouri Nagar",
             city: "Delhi",
@@ -58,7 +58,7 @@ const Address = () => {
 
         const Rcontent = document.getElementById('recent-addresses')
         Rcontent.style.transform = 'translateX(-100%)'
-        const Scontent = document.getElementById('saved-addresses')
+        const Scontent = document.getElementById('sa ved-addresses')
         Scontent.style.transform = 'translateX(-100%)'
     }
     function toggle0(){
@@ -95,18 +95,18 @@ const Address = () => {
     return (
         <div className="AddressPage">
             <div className="AddressPage-path"> <a href="/">Home</a>&ensp; &gt; &ensp; Select Address</div>
-            <div style={{width:"100%", display:"flex", flexDirection: "column", alignItems: "center", marginLeft:"70px"}}>
-                <img src={Logo} alt="Deeva Logo" style={{width:"142px", height:"57px", mixBlendMode:"darken"}} />
+            <div className='AddressSize' style={{ display:"flex", flexDirection: "column", alignItems: "center", marginLeft:"70px"}}>
+                <img className='imgchange' src={Logo} alt="Deeva Logo" />
                 <div className="AddressPage-heading" >Where to deliver the order ?</div>
                 
                 <div className="Address-card">
                     <div className="Address-card-instruction">Choose an address where you want us to deliver your order, and click on ‘Go to Payment Page’ .<br/>You can also add a new address.</div>
-                    <div style={{display:"flex", justifyContent:"center"}}>
+                    <div className='ChangingSize' style={{display:"flex", justifyContent:"center"}}>
 
                         <div className="AddressPage-toggle">
-                            <button onClick={toggle0} id="recently-delivered-btn" >Recently Delivered</button>
-                            <button onClick={toggle1} id="saved-address-btn" >Saved Addresses</button>
-                            <div style={{display:"flex"}}>   
+                            <button  id="recently-delivered-btn" >Recently Delivered</button>
+                            <button  id="saved-address-btn" >Saved Addresses</button>
+                            <div className='ChangeWidth' style={{display:"flex"}}>   
                                 <div id="recently-delivered" ></div>
                                 <div id="saved-address" ></div>
                             </div>
@@ -117,18 +117,18 @@ const Address = () => {
 
                     <div style={{display:"flex", overflow:"hidden", marginTop:"40px"}}>
                             
-                        <div id="recent-addresses" >
+                        <div id="recent-addresses" style={{display:"flex",flexDirection:"column"}} >
                             {user.map((e,i) => (
                                 <div key={i} style={{marginBottom: '50px'}}>
                                     <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
                                         <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
                                     </RadioGroup>
-                                    <div style={{display:"flex"}}>
+                                    <div className='rev1' style={{display:"flex"}}>
                                         <div style={{display:"flex", flexDirection:"column", width:"77.5%"}}>
                                             <div className="addresses-name">{e.name}</div>
                                             <div className="addresses-address">{e.address}&nbsp;{e.area}&nbsp;{e.city}&nbsp;{e.state}</div>
                                         </div>
-                                        <div style={{display:"flex", flexDirection:"column"}}>
+                                        <div className='rev2' style={{display:"flex", flexDirection:"column",marginLeft:"40px"}}>
                                             <button className="addresses-btn">Edit</button>
                                             <button className="addresses-btn" onClick={() => { handleRemove(e.id) }}>Remove address</button>
                                         </div>
@@ -144,12 +144,12 @@ const Address = () => {
                                     <RadioGroup value={radio} onChange={(e) => setRadio(e.target.value)} style={{float:"left"}} >
                                         <StylesProvider injectFirst><FormControlLabel value={e.name} control={<Radio />} /></StylesProvider>
                                     </RadioGroup>
-                                    <div style={{display:"flex"}}>
+                                    <div className='rev1' style={{display:"flex"}}>
                                         <div style={{display:"flex", flexDirection:"column", width:"77.5%"}}>
                                             <div className="addresses-name">{e.name}</div>
                                             <div className="addresses-address">{e.address}</div>
                                         </div>
-                                        <div style={{display:"flex", flexDirection:"column"}}>
+                                        <div className='rev2'style={{display:"flex", flexDirection:"column"}}>
                                             <button className="addresses-btn">Edit</button>
                                             <button className="addresses-btn" onClick={() => { handleRemove(e.id) }}>Remove address</button>
                                         </div>
